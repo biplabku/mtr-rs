@@ -1,0 +1,25 @@
+[package]
+name = "mtr-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Biplab Das <biplabku@gmail.com>"]
+description = "A modern network diagnostic tool combining ping and traceroute with real-time TUI"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/biplabku/mtr-rs"
+keywords = ["network", "traceroute", "ping", "mtr", "diagnostic"]
+categories = ["command-line-utilities", "network-programming"]
+readme = "README.md"
+
+[dependencies]
+multiprobe = "0.1"
+tokio = { version = "1", features = ["full"] }
+ratatui = "0.28"
+crossterm = "0.28"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "mtr-rs"
+path = "src/main.rs"
