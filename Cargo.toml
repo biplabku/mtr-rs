@@ -1,6 +1,6 @@
 [package]
 name = "mtr-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Biplab Das <biplabku@gmail.com>"]
 description = "A modern network diagnostic tool combining ping and traceroute with real-time TUI"
@@ -11,7 +11,7 @@ categories = ["command-line-utilities", "network-programming"]
 readme = "README.md"
 
 [dependencies]
-multiprobe = "0.1"
+multiprobe = "0.5"
 tokio = { version = "1", features = ["full"] }
 ratatui = "0.28"
 crossterm = "0.28"
